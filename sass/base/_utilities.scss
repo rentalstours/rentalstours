@@ -1,0 +1,46 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(
+        to right, 
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)), 
+    url(../assets/harley.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78vh, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78vh, 0% 100%);
+    position: relative;
+
+    @include respond(phone){
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
+        
+    }
+    
+}
+.u-center-text{
+    text-align: center !important;
+}
+.u-margin-bottom-big{
+    margin-bottom: 8rem !important;
+
+    @include respond(tablet-portrait){
+        margin-bottom: 5rem !important;
+    }
+}
+.u-margin-bottom-medium{
+    margin-bottom: 4rem !important;
+
+    @include respond(tablet-portrait){
+        margin-bottom: 3rem !important;
+    }
+}
+.u-margin-bottom-small{
+    margin-bottom: 1rem !important;
+}
+.u-margin-top-big{
+    margin-top: 8rem !important;
+} 
+.u-margin-top-huge{
+    margin-top: 10rem !important;
+}  
